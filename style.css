@@ -15,9 +15,8 @@ body {
     max-width: 960px;
     margin: 0 auto;
     clear: both;
+    display: grid;
   }
-  
-  
   h1, 
   h2, 
   h3, 
@@ -73,10 +72,7 @@ body {
     background: #4aaaa5;
   }
   
-  nav {
-    float: right;
-    margin-top: 25px;
-  }
+ 
   
   nav a {
     display: inline-block;
@@ -113,6 +109,7 @@ body {
   #main-container {
     padding-top: 27px;
     min-height: calc(100vh - 70px);
+    display: grid;
   }
   
   .main-section {
@@ -138,7 +135,7 @@ body {
   }
   
   .work img {
-    width: 100%;
+    max-width: 100%;
     border: 0 none;
     opacity: 0.8;
   }
@@ -189,3 +186,6 @@ body {
     font-size: 14px;
     border: 1px solid #dddddd;
   }
+
+
+  
