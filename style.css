@@ -135,7 +135,7 @@ body {
   }
   
   .work img {
-    max-width: 100%;
+    max-width: 50%;
     border: 0 none;
     opacity: 0.8;
   }
