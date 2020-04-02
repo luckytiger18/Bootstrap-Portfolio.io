@@ -1,9 +1,9 @@
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-    line-height: 34px;
-    /* color: #777777; */
+    /* font-size: 18px; */
+    /* line-height: 34px; */
     background: url("./assets/images/hypnotize/hypnotize.png");
+    
   }
 
  header {
@@ -29,8 +29,8 @@ body {
   }
 
   .navigation a:hover {
-    background: white;
     border-radius: 10px;
+    color: black;
   }
 
   p:last-child {
