@@ -6,14 +6,19 @@ body {
     background: url("./assets/images/hypnotize/hypnotize.png");
   }
 
+ header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 30px 10%;
+ }
+
   .navigation {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
     list-style: none;
     margin: 0;
-    background-color: whitesmoke;
-    border-bottom: 8px solid #a3b49e;
   }
   
   .navigation a {
@@ -25,19 +30,19 @@ body {
 
   .navigation a:hover {
     background: white;
+    border-radius: 10px;
   }
 
   p:last-child {
     margin-bottom: 0;
   }
-  /* TODO: Need to figure out how to move this to the left */
+  
   .logo {
     width: 130px;
     height: 130px;
     border-radius: 20px;
     padding: 10px;
-    display: flex;
-    justify-content: start;
+    /* justify-content: flex-start; */
   }
 
   .container {
