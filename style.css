@@ -1,5 +1,5 @@
 body {
-    font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
     /* font-size: 18px; */
     /* line-height: 34px; */
     background: url("./assets/images/hypnotize/hypnotize.png");
@@ -19,6 +19,7 @@ body {
     justify-content: flex-end;
     list-style: none;
     margin: 0;
+    font-weight: 700;
   }
   
   .navigation a {
@@ -29,7 +30,6 @@ body {
   }
 
   .navigation a:hover {
-    border-radius: 10px;
     color: black;
   }
 
@@ -50,6 +50,7 @@ body {
     flex-direction: row;
     flex-grow: 1;
     justify-content: center;
+    padding: 30px 10%;
   }
   
   h1 {
@@ -63,10 +64,49 @@ body {
     padding-bottom: 20px;
     line-height: 22px;
     border-bottom: 2px solid #eeeeee;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #a3b49e;
   }
 
+  .flipCard {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  }
+
+  .flipCardInner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .flipCard:hover, .flipCardBack {
+   transform: rotateY(180deg)
+  }
+
+  .flipCardFront, .flipCardBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+.flipCardFront {
+  background-color: #bbb;
+  color: black;
+}
+
+.flipCardBack {
+  background-color: #a3b49e;
+  color: white;
+  transform: rotateY(180deg);
+}
   /* nav a {
     display: inline-block;
     padding-left: 15px;
