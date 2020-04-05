@@ -72,7 +72,10 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: #a3b49e;
   }
-
+.cardImg {
+  width: 100%;
+  height: 100%;
+}
   .flipCard {
   background-color: transparent;
   width: 300px;
@@ -175,7 +178,6 @@ body {
   .auth-image {
     width: 300px;
     height: auto;
-    margin-top: 10px;
     margin-left: 60%;
 
   }
