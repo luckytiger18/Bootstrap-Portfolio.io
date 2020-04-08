@@ -1,8 +1,8 @@
 body {
   font-family: 'Montserrat', sans-serif;
-    /* font-size: 18px; */
-    /* line-height: 34px; */
-    background: url("./assets/images/hypnotize/hypnotize.png");
+  display: flex;
+  flex-direction: column;
+  background: url("./assets/images/hypnotize/hypnotize.png");
     
   }
 
@@ -47,12 +47,11 @@ body {
     height: 130px;
     border-radius: 20px;
     padding: 10px;
-    /* justify-content: flex-start; */
   }
 
   .container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-grow: 1;
     justify-content: center;
     padding: 30px 10%;
@@ -236,5 +235,35 @@ body {
     padding:0px;
   }
 
+@media (max-width: 600px){
+  .homePage {
+    position: relative;
+    animation-name: mymove;
+    animation-duration: 5s;
+   animation-fill-mode: forwards;
+  }
+  
+  @keyframes mymove {
+    from {left: 0px;}
+    to {left: 60px;}
+  }
+  .auth-image {
+   margin-left: 50px;
+   margin-bottom: 20px;
+   margin-top: 20px;
+  }
+  .navigation {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    list-style: none;
+    margin: 0px;
+    padding-left: 5px;
+    font-weight: 700;
+  }
 
- 
+  header {
+   justify-content: center;
+  }
+    
+  }
