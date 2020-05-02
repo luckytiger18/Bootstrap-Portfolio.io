@@ -2,8 +2,6 @@ body {
   font-family: 'Montserrat', sans-serif;
   display: flex;
   flex-direction: column;
-  background: url("./assets/images/hypnotize/hypnotize.png");
-    
   }
 
  header {
@@ -15,7 +13,7 @@ body {
 
  .title {
    padding: 30px 15% 10px;
-   margin-bottom: 40px;
+   /* margin-bottom: 40px; */
  }
 
   .navigation {
@@ -43,8 +41,8 @@ body {
   }
   
   .logo {
-    width: 130px;
-    height: 130px;
+    width: 50%;
+    height: 50%;
     border-radius: 20px;
     padding: 10px;
   }
@@ -80,9 +78,9 @@ body {
   background-color: transparent;
   border-bottom: none;
   margin: 10%;
-  padding-top: 10%;
 }
 .homePage {
+  height: 100vh;
   position: relative;
   animation-name: mymove;
   animation-duration: 5s;
@@ -92,6 +90,10 @@ body {
 @keyframes mymove {
   from {left: 0px;}
   to {left: 200px;}
+}
+
+p {
+  padding: 50px 0 50px 0;
 }
   .flipCard {
   background-color: transparent;
@@ -151,9 +153,9 @@ body {
     border-left: 1px solid #efefef;
   } */
   
-  nav a:first-child {
+  /* nav a:first-child {
     border-left: 0 none;
-  }
+  } */
   
   footer {
     padding: 30px 0;
@@ -166,9 +168,18 @@ body {
     height: 50px;
   }
   
+  #AboutMe {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 60px;
+  }
+
   .main-section {
+    /* height: 110vh; */
     display: flex;
     flex-flow: row wrap;
+    flex-direction: row;
     align-content: center;
   } 
 
@@ -201,35 +212,35 @@ body {
   }
   
   .auth-image {
-    width: 300px;
+    width: 400px;
     height: auto;
-    margin-left: 60%;
+    padding-left: 10%;
   }
   
-  #contact-form ul {
+  /* #contact-form ul {
     margin-bottom: 10px;
   }
   
   #contact-form li {
     margin-bottom: 10px;
-  }
+  } */
   
-  label, 
+  /* label, 
   input[type=text],
   input[type=email],
   textarea {
     display: block;
     width: 100%;
-  }
+  } */
   
-  input[type=text],
+  /* input[type=text],
   input[type=email],
   textarea {
     height: 35px;
     padding: 0 10px;
     font-size: 14px;
     border: 1px solid #dddddd;
-  }
+  } */
 
   .box{
     padding:0px;
