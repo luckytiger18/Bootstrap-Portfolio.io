@@ -8,6 +8,7 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="./style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -21,10 +22,12 @@
         <li><a href="./index.html">Home</a></li>
         <li><a href="#AboutMe"">About</a></li>
         <li><a href=" #Projects">Portfolio</a></li>
-        <li><a href="./contact.html">Contact</a></li>
       </ul>
+
     </nav>
   </header>
+
+
 
   <div class="homePage">
     <h1 class="jumbotron">Hello, My name is Annie Luc</h1>
@@ -40,6 +43,11 @@
             <h3>Web Developer</h3>
             <h3>Watercolor Painter</h3>
             <h3>Dog Mom</h3>
+            <div class="contactInfo">
+              <a href="https://github.com/luckytiger18"><i class="fa fa-github" id="gitHubIcon" aria-hidden="true"></i></a>
+              <a href="mailto:annie.luc86@gmail.com"><i class="fa fa-envelope-o" id="envelopIcon" aria-hidden="true"></i></a>
+              <a href="https://www.linkedin.com/in/annie-luc-bb025651/"><i id="linkedinIcon"class="fa fa-linkedin"></i></a>
+            </div>
           </div>
           <img src="assets/images/hypnotize/IMG_3262.JPG" class="auth-image" alt="A picture of Annie">
         </div>
@@ -124,41 +132,13 @@
     </div>
   </div>
 
-  <div id="main-container" class="container">
-    <div class="row">
-      <div class=>
-        <section class="main-section">
-          <h1>Contact</h1>
 
-          <form id="contact-form">
-            <ul>
-              <li>
-                <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Your Name" required="required">
-              </li>
 
-              <li>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
-              </li>
-
-              <li>
-                <label for="message">Message</label>
-                <textarea name="message" id="message" required="required"></textarea>
-              </li>
-            </ul>
-            <input type="submit">
-
-          </form>
-        </section>
-      </div>
+  <footer>
+    <div class="footerContainer">
+      Built with &hearts; By Annie Luc &copy; 2020
     </div>
-
-    <footer>
-      <div>
-        Built with &hearts; &copy;
-      </div>
-    </footer>
+  </footer>
 </body>
 
 </html>
