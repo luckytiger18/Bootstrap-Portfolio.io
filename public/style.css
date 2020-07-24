@@ -2,8 +2,6 @@ body {
   font-family: 'Montserrat', sans-serif;
   display: flex;
   flex-direction: column;
-
-
 }
 
 header {
@@ -11,11 +9,13 @@ header {
   justify-content: flex-end;
   align-items: center;
   background-color: black;
-
+}
+.summary {
+  font-size: 20px;
+  padding-bottom: 4%;
 }
 
 .introduction {
-  /* min-height: 10vh; */
   background-image: url("./assets/images/hypnotize/marble.jpg");
   background-size: cover;
 }
@@ -43,7 +43,7 @@ header {
 }
 
 .navigation a:hover {
-  color: black;
+  color: #ffbbbb;
 }
 
 p:last-child {
@@ -56,13 +56,13 @@ p:last-child {
   flex-grow: 1;
   justify-content: center;
   padding: 30px 10%;
-  background-color: #545454;
+  background-color: rgb(21, 32, 43);
   color: #ffbbbb;
   text-align: center;
 }
 
 h1 {
-  margin-bottom: 25px;
+  margin-bottom:4%;
   font-size: 40px;
   line-height: 49px;
   border-bottom: 3px solid #dddddd;
@@ -81,6 +81,7 @@ h3 {
 .cardImg {
   width: 100%;
   height: 100%;
+  border-radius: 10px;
 }
 
 .jumbotron {
@@ -122,55 +123,57 @@ h3 {
   backface-visibility: hidden;
 }
 
-.flipCardFront {
-  color: black;
-}
-
 .flipCardBack {
   background-image: url("./assets/images/hypnotize/hypnotize.png");
   color: black;
   transform: rotateY(180deg);
+  border-radius: 10px;
 }
 
 .projectContainer {
   display: flex;
   flex-direction: row;
-  justify-content: left;
   flex-wrap: wrap;
   justify-content: space-around;
+  background-image: url("./assets/images/hypnotize/marble.jpg");
+  border-radius: 10px;
+  padding-bottom: 5%;
 }
 
 .footerContainer {
   display: flex;
-  justify-content: start;
+  justify-content: flex-end;
 }
 
 #AboutMe {
   padding-top: 20px;
   display: flex;
   flex-direction: row;
-  /* padding-left: 60px; */
 }
 
 .auth-image {
   width: 400px;
   height: auto;
   padding-left: 10%;
-  margin-left: 100px;
+  margin-left: 30%;
+  padding-bottom:3%;
+  border-radius: 50%;
 }
 
 #gitHubIcon,
 #envelopIcon,
 #linkedinIcon {
-  font-size: 30px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  font-size: 50px;
 }
 
 .contactInfo {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+}
+
+#contactTitle {
+  padding-top: 5%;
 }
 
 .contactInfo a {
@@ -203,5 +206,4 @@ h3 {
     padding-left: 5px;
     font-weight: 700;
   }
-
 }
