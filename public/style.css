@@ -6,9 +6,22 @@ body {
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  padding: 30px 10%;
+  background-color: black;
+}
+.summary {
+  font-size: 20px;
+  padding-bottom: 4%;
+}
+
+.introduction {
+  background-image: url("./assets/images/hypnotize/marble.jpg");
+  background-size: cover;
+}
+
+#logo {
+  height: 50rem;
 }
 
 .title {
@@ -17,8 +30,6 @@ header {
 
 .navigation {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-end;
   list-style: none;
   margin: 0;
   font-weight: 700;
@@ -32,34 +43,31 @@ header {
 }
 
 .navigation a:hover {
-  color: black;
+  color: #ffbbbb;
 }
 
 p:last-child {
   margin-bottom: 0;
 }
 
-.logo {
-  width: 50%;
-  height: 50%;
-  border-radius: 20px;
-  padding: 10px;
-}
-
-.container {
+.container-fluid {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   justify-content: center;
   padding: 30px 10%;
+  background-color: rgb(21, 32, 43);
+  color: #ffbbbb;
+  text-align: center;
 }
 
 h1 {
- margin-bottom: 25px;
+  margin-bottom:4%;
   font-size: 40px;
   line-height: 49px;
   border-bottom: 3px solid #dddddd;
   font-family: 'Righteous', cursive;
+  text-align: center;
 }
 
 h3 {
@@ -73,35 +81,14 @@ h3 {
 .cardImg {
   width: 100%;
   height: 100%;
+  border-radius: 10px;
 }
 
 .jumbotron {
   background-color: transparent;
   border-bottom: none;
   margin: 10%;
- font-family: 'Righteous', cursive;
-}
-
-.homePage {
-  height: 100vh;
-  position: relative;
-  animation-name: mymove;
-  animation-duration: 5s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes mymove {
-  from {
-    left: 0px;
-  }
-
-  to {
-    left: 200px;
-  }
-}
-
-p {
-  margin: 10px;
+  font-family: 'Righteous', cursive;
 }
 
 .flipCard {
@@ -136,105 +123,57 @@ p {
   backface-visibility: hidden;
 }
 
-.flipCardFront {
-  color: black;
-}
-
 .flipCardBack {
   background-image: url("./assets/images/hypnotize/hypnotize.png");
   color: black;
   transform: rotateY(180deg);
+  border-radius: 10px;
 }
 
 .projectContainer {
   display: flex;
   flex-direction: row;
-  justify-content: left;
   flex-wrap: wrap;
   justify-content: space-around;
-}
-
-footer {
-  padding: 30px 0;
-  clear: both;
-  font-size: 12px;
-  color: #cccccc;
-  text-align: center;
-  background: whitesmoke;
-  border-top: 8px solid #a3b49e;
-  height: 50px;
-  display: flex;
-  justify-content: center;
+  background-image: url("./assets/images/hypnotize/marble.jpg");
+  border-radius: 10px;
+  padding-bottom: 5%;
 }
 
 .footerContainer {
   display: flex;
-  justify-content: start;
+  justify-content: flex-end;
 }
 
 #AboutMe {
   padding-top: 20px;
   display: flex;
   flex-direction: row;
-  /* padding-left: 60px; */
-}
-
-.main-section {
-  /* height: 110vh; */
-  display: flex;
-  flex-flow: row wrap;
-  flex-direction: row;
-  align-content: center;
-  margin-bottom: 100px;
-}
-
-.work {
-  position: relative;
-  float: left;
-  width: 274px;
-  margin: 20px 0 25px;
-  overflow: auto;
-  margin-right: 50px;
-}
-
-.work img {
-  max-width: 100%;
-  opacity: 0.8;
-}
-
-.work h3 {
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
-  padding: 15px;
-  margin-bottom: 0;
-  font-weight: 300;
-  line-height: 30px;
-  color: #ffffff;
-  text-align: center;
-  background: #a3b49e;
-  border-bottom: 0;
 }
 
 .auth-image {
   width: 400px;
   height: auto;
   padding-left: 10%;
-  margin-left: 100px;
+  margin-left: 30%;
+  padding-bottom:3%;
+  border-radius: 50%;
 }
 
 #gitHubIcon,
 #envelopIcon,
 #linkedinIcon {
-  font-size: 30px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  font-size: 50px;
 }
 
 .contactInfo {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+}
+
+#contactTitle {
+  padding-top: 5%;
 }
 
 .contactInfo a {
@@ -253,16 +192,6 @@ footer {
     animation-fill-mode: forwards;
   }
 
-  @keyframes mymove {
-    from {
-      left: 0px;
-    }
-
-    to {
-      left: 60px;
-    }
-  }
-
   .auth-image {
     margin-left: 50px;
     margin-bottom: 20px;
@@ -271,12 +200,10 @@ footer {
 
   .navigation {
     display: flex;
-    flex-flow: row;
     justify-content: center;
     list-style: none;
     margin: 0px;
     padding-left: 5px;
     font-weight: 700;
   }
-
 }
